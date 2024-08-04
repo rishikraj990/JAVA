@@ -16,6 +16,12 @@ public class MainProgram {
         Shape.Square square = new Shape.Square(4);
         calculateArea(square);
         printer.print(square);
+
+        /** yaha agar cube add kernge jo ki ek shape hai pr uske pas area nahi hota uske pas volume hota hai
+         * aur baki ke pas area, to agar ishape interface ko dekhe to ek tarah se wo sahi nahi hai
+         * shape 2D , 3D hota hai, ko direct IShape na use kerke IShape (parent) and I2DShape (child) is better approach hai
+         * ise we will not force 2d shape to implement 3d methods, and vice-versa.
+         */
     }
 
     private static void calculateArea(IShape iShape){

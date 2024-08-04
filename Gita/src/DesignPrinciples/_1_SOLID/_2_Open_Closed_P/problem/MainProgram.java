@@ -12,6 +12,11 @@ public class MainProgram {
         Shape.Rectangle rectangle = new Shape.Rectangle(5, 2);
         calculateArea(rectangle);
         printer.print(rectangle);
+
+        /** jase hi hum rectangle banaye to humko sara method jase calculateArea, print firse likna pada
+         * aur aage jetna add karenge ute bar sab chij firse likhna hoga
+         * to we have to use parent child property to solve this issue
+         */
     }
 
     private static void calculateArea(Shape.Circle circle){

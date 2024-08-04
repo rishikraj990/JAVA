@@ -21,6 +21,13 @@ public class MainProgram {
         calculateVolume(cube);
 //        printer.print(cube);
         printer.printf(cube);
+
+        /** yaha humlog direct Printer class ka object banaye hai jise TIGHT COUPLING hua hai
+         * agar humko method me kuch change kerna hoga to main class jo usko use ker raha, usme bhi change kerna hoga
+         * jo ki ek correct approach nahi hai,
+         * esliye always try to use interface / abstraction jise coupling loose ho jaye
+         * agar jab tak interface ke signature me change nahi hoga tab tak caller me bhi change kerna ka jarurat nahi padega
+         */
     }
 
     private static void calculateArea(I2DShape i2DShape){

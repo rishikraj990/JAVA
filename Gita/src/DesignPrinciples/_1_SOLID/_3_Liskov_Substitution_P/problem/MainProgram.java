@@ -16,6 +16,12 @@ public class MainProgram {
         Shape.Square square = new Shape.Square(4, 5);
         calculateArea(square);
         printer.print(square);
+
+        /** ya square bhi ek type of rectangle hai pr hum rectangle ko parent aur square ko child nahi bana sakte,
+         * kyoki wo square ke property ko breake kareg,
+         * square me length, bredath nahi hota
+         * esliye square extends rectangle ki jagah, square implements IShape is better option
+         */
     }
 
     private static void calculateArea(IShape iShape){
