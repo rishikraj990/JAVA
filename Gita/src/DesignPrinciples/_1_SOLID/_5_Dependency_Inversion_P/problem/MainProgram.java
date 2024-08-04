@@ -1,25 +1,26 @@
-package DesignPrinciples._1_SOLID._4_Interface_Segregation_P;
+package DesignPrinciples._1_SOLID._5_Dependency_Inversion_P.problem;
 
 public class MainProgram {
 
     public static void main(String[] args){
         Printer printer = new Printer();
 
-        I2DShape circle = new Shape.Circle(5);
+        Shape.Circle circle = new Shape.Circle(5);
         calculateArea(circle);
         printer.print(circle);
 
-        I2DShape rectangle = new Shape.Rectangle(5, 2);
+        Shape.Rectangle rectangle = new Shape.Rectangle(5, 2);
         calculateArea(rectangle);
         printer.print(rectangle);
 
-        I2DShape square = new Shape.Square(4);
+        Shape.Square square = new Shape.Square(4);
         calculateArea(square);
         printer.print(square);
 
-        I3DShape cube = new Shape.Cube(8);
+        Shape.Cube cube = new Shape.Cube(8);
         calculateVolume(cube);
-        printer.print(cube);
+//        printer.print(cube);
+        printer.printf(cube);
     }
 
     private static void calculateArea(I2DShape i2DShape){

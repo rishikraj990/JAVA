@@ -1,9 +1,11 @@
-package DesignPrinciples._1_SOLID._4_Interface_Segregation_P;
+package DesignPrinciples._1_SOLID._5_Dependency_Inversion_P;
 
 public class MainProgram {
 
     public static void main(String[] args){
-        Printer printer = new Printer();
+        IPrinter printer = new PrinterCons();
+        IPrinter printerf = new PrinterF();
+
 
         I2DShape circle = new Shape.Circle(5);
         calculateArea(circle);
@@ -20,6 +22,8 @@ public class MainProgram {
         I3DShape cube = new Shape.Cube(8);
         calculateVolume(cube);
         printer.print(cube);
+        printerf.print(cube);
+
     }
 
     private static void calculateArea(I2DShape i2DShape){
