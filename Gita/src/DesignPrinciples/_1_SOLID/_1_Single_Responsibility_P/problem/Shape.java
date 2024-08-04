@@ -1,4 +1,4 @@
-package DesignPrinciples._1_SOLID._0_Problem;
+package DesignPrinciples._1_SOLID._1_Single_Responsibility_P.problem;
 
 public class Shape {
 
