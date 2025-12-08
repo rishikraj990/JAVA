@@ -8,12 +8,12 @@ Given an array of integers: [1, 2, 1, 3, 2] and we are given some queries: [1, 3
 
 Similarly, the following will be the answers to the given queries:
 
-![img_5.png](img_5.png)
+![img_5.png](../Images/img_5.png)
 
 Brute Force approach:
 As we have learned the ‘for loop’, the first approach that should come to our mind is to use it to solve this problem. For each query, we will iterate over the array using a loop. We will count the number of times the query number appears in that array i.e. increment the counter variable if the array element at that index equals the query number. In terms of function, it will look like the following:
 
-![img_6.png](img_6.png)
+![img_6.png](../Images/img_6.png)
 
 Now, for each query, we will call the function and it will return the number of times the given query appears in the array.
 
@@ -35,7 +35,7 @@ Assumption: We are assuming that the maximum element in the given array can be 1
 
 Step 1 - Pre-storing: In this step, we will create an array(named hash array) of size 13(so that we can get the index 12) initialized with 0. In this hash array, we are going to store the frequency of each element(i.e. The number of times each element appears in the array) of the given array. To do so, we will iterate over the given array, and for each element arr[i], we will do hash[arr[i]] += 1. After completing this process the hash array will look like the following:
 
-![img_7.png](img_7.png)
+![img_7.png](../Images/img_7.png)
 
 This step is named pre-storing as we are pre-calculating the information about the element of the array before answering the queries.
 
@@ -94,7 +94,7 @@ Output:
 Point to remember:
 We may encounter a problem where the maximum array element may be very large like 109. In that case, theoretically, we should declare an array of size 109+1. But we cannot do so. The maximum size of an array can be the following:
 
-![img_8.png](img_8.png)
+![img_8.png](../Images/img_8.png)
 
 Note: So, with this method, we can solve the problems where the array is within a specific size. We are going to discuss later in the article, how we can overcome this limitation of the specific size.
 
@@ -105,12 +105,12 @@ Given the string: “abcdabefc” we are given some queries: [a, c, z]. For each
 
 Similarly, the following will be the answers to the given queries:
 
-![img_9.png](img_9.png)
+![img_9.png](../Images/img_9.png)
 
 Brute Force approach:
 It is similar to the previous problem. Here, for each query, we will iterate over the string using a for loop and will count the number of times the character appears in that string i.e. increment the counter variable if the character at that index of the string equals the given character. In terms of function, it will look like the following:
 
-![img_10.png](img_10.png)
+![img_10.png](../Images/img_10.png)
 
 Now, for each query, we will call the function and it will return the number of times the given character appears in the string.
 
@@ -254,7 +254,7 @@ Let’s understand the concepts considering the same example, we have used befor
 
 The data structure looks like the following:
 
-![img_11.png](img_11.png)
+![img_11.png](../Images/img_11.png)
 
 Key: In a map, a key refers to the element, for which we want to store information. We can access the value of a key using the key itself like mp[key].
 
@@ -262,16 +262,16 @@ Value: Value refers to the information stored corresponding to a key.
 
 In our example, we want to store the frequency(i.e. How many times an element appears in the array) of each element of the given array. So, here each element of the array will be the key of the map and frequencies will be the value corresponding to the keys. In terms of code, it will look like the following:
 
-![img_12.png](img_12.png)
+![img_12.png](../Images/img_12.png)
 
 Difference between map and unordered_map in C++:
 
-![img_13.png](img_13.png)
+![img_13.png](../Images/img_13.png)
 
 Difference between array hashing and hashing using the map:
 Let’s understand the difference considering the array: [1, 2, 3, 1, 3, 2, 12]. Here, the maximum element of the array is 12. So, if we apply array hashing, we need an array of size 13. But if we apply the map data structure, it will be the following:
 
-![img_14.png](img_14.png)
+![img_14.png](../Images/img_14.png)
 
 Note: If we want to fetch the value of a key that does not exist in the map, the map will always return 0 in C++ and null in Java.
 
@@ -337,7 +337,7 @@ Note: We can similarly perform character hashing using the map data structure.
 
 The syntax will be the following:
 
-![img_15.png](img_15.png)
+![img_15.png](../Images/img_15.png)
 
 Time complexity of map data structure:
 The total time complexity will be O(N * time taken by map data structure).
@@ -374,7 +374,7 @@ Pre storing: hash[arr[i]%10] += 1 and Fetching: hash[number%10]
 
 Now if we apply this method to the given array, the hash array will look like the following:
 
-![img_16.png](img_16.png)
+![img_16.png](../Images/img_16.png)
 
 This is how the division method works. We simply reduce the array elements and apply array hashing.
 
@@ -389,7 +389,7 @@ Given array: [2, 5, 16, 28, 139, 38, 48, 28, 18]
 
 In this array 28, 38, 48, and 18 are giving the same value for modulo 10. So, we will apply linear chaining. The hash array will look like the following:
 
-![img_17.png](img_17.png)
+![img_17.png](../Images/img_17.png)
 
 Now to get the frequency of a number, we will first go to (number % 10) indexed chain and count the frequency of that number.
 
@@ -403,7 +403,7 @@ Example:
 Given array: [8, 18, 28, 38, 48, 58, 68, ….., 1008]
 If we apply the methods and take modulo 10 for every number, the hash array will look like the following:
 
-![img_18.png](img_18.png)
+![img_18.png](../Images/img_18.png)
 
 Now, while fetching we have to traverse N times(N = size of the given array) to find the frequency of an element. This is when the worst case happens and the time complexity becomes O(N). But this happens very very rarely.
 
