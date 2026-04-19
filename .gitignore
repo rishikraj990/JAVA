@@ -1,0 +1,33 @@
+#Default ignore files
+/shelf/
+/workspace.xml
+
+# Java
+*.class
+*.jar
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Visual Studio Code
+.vscode/
+.code-workspace
+
+# MAC
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Log
+*.log
+
+
