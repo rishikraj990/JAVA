@@ -5,6 +5,7 @@
 # Java
 *.class
 *.jar
+out/
 
 # Eclipse
 .classpath
