@@ -1,4 +1,4 @@
-package DSA.S01_05_BasicRecursion;
+package DSA.S01_Basic.S01_05_BasicRecursion;
 
 import java.util.Scanner;
 
@@ -24,11 +24,16 @@ public class L02_PrintNameNtimesusingRecursion {
     }
 
     private static void printNameNTimes(int n, String name) {
+//      /**
+//       * Brute; TC:[ O(n) ]; SC (Stack Space):[ O(n) ]
+//       ====================================
         if (n<1){
             return;
         } else{
             System.out.print(name + " ");
             printNameNTimes(n-1, name);
         }
+//       ====================================
+//       */
     }
 }
