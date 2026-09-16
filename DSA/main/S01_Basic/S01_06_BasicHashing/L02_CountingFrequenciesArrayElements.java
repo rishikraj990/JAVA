@@ -1,4 +1,4 @@
-package DSA.S01_Basic.S01_06_BasicHashing;
+package DSA.main.S01_Basic.S01_06_BasicHashing;
 
 import java.util.*;
 

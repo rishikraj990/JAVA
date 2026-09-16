@@ -1,4 +1,4 @@
-package DSA.S01_Basic.S01_05_BasicRecursion;
+package DSA.main.S01_Basic.S01_05_BasicRecursion;
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class L07_ReverseAnArray {
         }
     }
 
-    public static void reverse(int[] arr, int i) {
+    private static void reverse(int[] arr, int i) {
 //      /**
 //       * Brute; TC:[ O(N) ]; SC (Stack Space):[ O(N) ]
 //       ====================================

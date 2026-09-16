@@ -1,11 +1,11 @@
-package DSA.S01_Basic.S01_05_BasicRecursion;
+package DSA.main.S01_Basic.S01_05_BasicRecursion;
 
 import java.util.Scanner;
 
-public class L03_Print1ToNUsingRecursion {
+public class L04_PrintNto1UsingRecursion {
 
     /**
-     * Problem Description: Given an integer N, write a program to print numbers from 1 to N. Using,
+     * Problem Description: Given an integer N, write a program to print numbers from N to 1.
      * (i) FORWARD RECURSION
      * (ii) BACKTRACKING
      */
@@ -15,33 +15,34 @@ public class L03_Print1ToNUsingRecursion {
         int n = sc.nextInt();
 
 //        FORWARD RECURSION
-//        printNumbers(1, n);
+//        printNumbers(n, n);
 
 //        BACKTRACKING
-        printNumbers(n, n);
+        printNumbers(1, n);
     }
 
     public static void printNumbers(int i, int n) {
 //      /** - FORWARD RECURSION
 //       * Brute; TC:[ O(N) ]; SC (Stack Space):[ O(N) ]
 //       ====================================
-//        if(i>n){
+//        if(i<1){
 //            return;
 //        }
 //        System.out.print(i + " ");
-//        printNumbers(i+1, n);
+//        printNumbers(i-1, n);
 //       ====================================
 //       */
 
 //      /** - BACKTRACKING
 //       * Brute; TC:[ O(N) ]; SC (Stack Space):[ O(N) ]
 //       ====================================
-        if(i<1){
+        if(i>n){
             return;
         }
-        printNumbers(i-1, n);
+        printNumbers(i+1, n);
         System.out.print(i + " ");
 //       ====================================
 //       */
     }
+
 }

@@ -1,11 +1,11 @@
-package DSA.S02_Sorting;
+package DSA.main.S02_Sorting;
 
 import java.util.Scanner;
 
-public class L07_QuickSortAlgorithm_Asc {
+public class L08_QuickSort_Desc {
 
     /**
-     * Problem Statement: Given an array of n integers, sort in ASC the array using the Quicksort method.
+     * Problem Statement: Given an array of n integers, sort in DESC the array using the Quicksort method.
      */
 
     public static void main(String[] args) {
@@ -34,10 +34,10 @@ public class L07_QuickSortAlgorithm_Asc {
         int i = l;
         int j = h;
         while (i<j){
-            while (i<=h-1 && pivotElem >= arr[i]){
+            while (i<=h-1 && pivotElem <= arr[i]){
                 i++;
             }
-            while (j>=l+1 && pivotElem < arr[j]){
+            while (j>=l+1 && pivotElem > arr[j]){
                 j--;
             }
             if(i<j){

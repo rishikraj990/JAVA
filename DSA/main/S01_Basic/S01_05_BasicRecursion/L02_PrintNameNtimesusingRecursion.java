@@ -1,4 +1,4 @@
-package DSA.S01_Basic.S01_05_BasicRecursion;
+package DSA.main.S01_Basic.S01_05_BasicRecursion;
 
 import java.util.Scanner;
 

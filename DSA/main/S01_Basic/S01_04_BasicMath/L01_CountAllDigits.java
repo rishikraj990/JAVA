@@ -1,4 +1,4 @@
-package DSA.S01_Basic.S01_04_BasicMath;
+package DSA.main.S01_Basic.S01_04_BasicMath;
 
 public class L01_CountAllDigits {
 
